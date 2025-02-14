@@ -11,5 +11,5 @@
  */
 
 // Write your solution here
-
+const charCount = (str, char) => str.split(char).length - 1;
 module.exports = charCount;
