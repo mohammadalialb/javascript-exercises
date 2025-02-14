@@ -11,4 +11,8 @@
  * searchArray([1, 2, 3, 4], 5) should return false.
  */
 
+function searchArray (arr , target){
+    return arr.indexOf(target)!== -1
+}
+
 module.exports = searchArray;
