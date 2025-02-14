@@ -11,5 +11,5 @@
  */
 
 // Write your solution here
-
+const reverseString = str => [...str].reverse().join('');
 module.exports = reverseString;
