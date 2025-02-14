@@ -10,5 +10,17 @@
  * generateCombinations([1, 2, 3]) should return
  * [ [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3] ].
  */
-
+const generateCombinations = nums => {
+    const result = [];
+    const backtrack = (start, current, length) => {
+        if (current.length === length) return result.push([...current]);
+        for (let i = start; i < nums.length; i++) {
+            current.push(nums[i]);
+            backtrack(i + 1, current, length);
+            current.pop();
+        }
+    };
+    for (let len = 1; len <= nums.length; len++) backtrack(0, [], len);
+    return result;
+};
 module.exports = generateCombinations;
