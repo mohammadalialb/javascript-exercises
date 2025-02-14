@@ -11,5 +11,8 @@
  */
 
 // Write your solution here
-
+const findDuplicates = arr => {
+    const seen = new Set();
+    return arr.filter(num => seen.has(num) || !seen.add(num));
+};
 module.exports = findDuplicates;
