@@ -18,5 +18,14 @@
  * (e.g., `<div id="clock"></div>`) to display the clock.
  */
 
+const digitalClock = () => {
+    const clockElement = document.getElementById("clock");
+    const updateClock = () => {
+        const now = new Date();
+        clockElement.textContent = now.toLocaleTimeString('en-GB', { hour12: false });
+    };
+    updateClock();
+    setInterval(updateClock, 1000);
+};
 
 module.exports = digitalClock;
