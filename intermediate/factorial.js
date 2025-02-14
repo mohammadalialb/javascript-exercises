@@ -11,5 +11,5 @@
  */
 
 // Write your solution here
-
+const factorial = n => n < 0 ? "Invalid input" : n <= 1 ? 1 : n * factorial(n - 1);
 module.exports = factorial;
