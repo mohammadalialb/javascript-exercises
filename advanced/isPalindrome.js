@@ -12,4 +12,15 @@
  * isPalindrome(10) should return false.
  */
 
+
+function isPalindrome(num) {
+    if (num < 0) return false
+
+    const strNum = num.toString()
+    const reversedStr = strNum.split('').reverse().join(''); 
+
+    return strNum === reversedStr;
+}
+
+
 module.exports = isPalindrome;
