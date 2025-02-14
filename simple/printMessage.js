@@ -10,8 +10,8 @@
  */
 
 // Write your solution here
-function printMessage(message) {
-  console.log(message);
+function printMessage(abbas) {
+  console.log(abbas);
 }
 
 module.exports = printMessage;
