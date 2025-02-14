@@ -11,5 +11,14 @@
  */
 
 // Write your solution here
+const fibonacci = n => {
+    if (n <= 0) return [];
+    if (n === 1) return [0];
 
+    const seq = [0, 1];
+    while (seq.length < n) {
+        seq.push(seq.at(-1) + seq.at(-2));
+    }
+    return seq;
+};
 module.exports = fibonacci;
