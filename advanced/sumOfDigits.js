@@ -10,4 +10,11 @@
  * sumOfDigits(987) should return 24 (9 + 8 + 7).
  */
 
+function sumOfDigits(num) {
+    return String (num)
+   .split('')
+     
+    .reduce((sum , digit) => sum + Number(digit) , 0)
+}
+
 module.exports = sumOfDigits;
