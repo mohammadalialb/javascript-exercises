@@ -12,4 +12,10 @@
 
 // Write your solution here
 
+function reverseString(abbas) {
+    return Array.from(abbas).reverse().join('')
+}
+console.log(reverseString("abbas"))
+
+
 module.exports = reverseString;
