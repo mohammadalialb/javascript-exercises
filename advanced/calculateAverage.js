@@ -10,4 +10,14 @@
  * calculateAverage([10, 20, 30]) should return 20.
  */
 
+function calculateAverage (num){
+ 
+    let sum = 0;
+    for( let i = 0 ; i < num.length ; i++){
+        sum += num[i];
+    } 
+    return sum / num.length ;
+}
+
+
 module.exports = calculateAverage;
