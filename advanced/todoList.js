@@ -13,5 +13,11 @@
  */
 
 // Write your solution here
+let tasks = [];
 
+const addTask = task => (tasks.includes(task) ? tasks : tasks.push(task), tasks);
+
+const removeTask = task => (tasks = tasks.filter(t => t !== task));
+
+const showTasks = () => tasks;
 module.exports = { addTask, removeTask, showTasks };
